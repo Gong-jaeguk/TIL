@@ -2,4 +2,4 @@
 
 여기는 제가 매일 배운것을 작성하는 곳입니다
 
-[Git](git/)
+[Git](git/README.md)
