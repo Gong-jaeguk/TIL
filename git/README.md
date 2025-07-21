@@ -40,5 +40,28 @@
 `git log`
 - 변경 내역 확인
 
-`git commit —amend`
+`git commit --amend`
 - commit 메시지 수정, commit 전체 수정
+
+`git remote -v`
+- 현재 로컬 저장소에 등록된 원격 저장소 목록 보기
+
+`gir remote rm <원격_저장소_이름>`
+- 현재 로컬 저장소에 등록된 원격 저장소 삭제
+
+`git revert <commit id>`
+- 재설정
+- 단일 commit을 실행 취소 하는 것
+- 프로젝트 기록에서 commit을 없었던 일로 처리 후 그 결과를 새로운 commit으로 추가
+
+`git reset [옵션] <commit id>`
+- 되돌리기
+- 특정 commit으로 되돌아 갔을 떄, 되돌아가 commit 이후의 commit은 모두 삭제
+- 옵션 : '--soft', '--mixed', '--hard'
+    - soft : commit 이전으로
+    - mixed : add 전으로
+    - hard : 삭제된 commit의 기록을 남기지 않음
+
+`git restore`
+- Modified 상태의 파일 되돌리기
+- Working Directory에서 파일을 수정한 뒤, 파일의 수정 사항을 취소하고, 원래 모습대로 되돌리는 작업
